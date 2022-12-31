@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/message_container"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/out_going_message_container"
+        android:layout_width="220dp"
+        android:layout_marginStart="80dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/outgoingbubble"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:layout_margin="10dp"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:id="@+id/message_sent"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="2dp"
+            android:paddingStart="2dp"
+            android:paddingEnd="8dp"
+            android:textSize="16dp"
+            android:text="Hello! How are you?"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/out_going_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:paddingRight="10dp"
+            android:text="10:00 PM 2nd Oct 22"
+            android:paddingBottom="2dp"
+            android:textAlignment="textEnd"
+            android:textAllCaps="false"
+            android:textStyle="italic"
+            android:textSize="10sp"
+            android:textColor="@color/white"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/incoming_message_container"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/incomingbuuble"
+        android:layout_alignParentLeft="true"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:id="@+id/message_received"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/text_view"
+                android:lineSpacingExtra="2dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:textSize="16dp"
+                android:text=""
+                android:textColor="@color/black"
+
+                >
+            </TextView>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/in_coming_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="10:01 PM 2nd Oct 22"
+            android:paddingBottom="2dp"
+            android:textAlignment="textEnd"
+            android:textAllCaps="false"
+            android:textStyle="italic"
+            android:textSize="10sp"
+            android:textColor="@color/txtGrayColor" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/outGoingVOiceMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/outgoingbubble"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="fitXY"
+                android:layout_marginBottom="10dp"
+                android:padding="15dp"
+                android:background="@drawable/transparent"
+                android:id="@+id/playvoicemesssage"
+                android:src="@drawable/play"
+                />
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"
+                android:padding="15dp"
+                android:id="@+id/loader_outgoing"
+                app:SpinKit_Color="@color/white"
+                style="@style/SpinKitView.Large.Circle"
+                android:layout_centerInParent="true"
+
+                />
+
+            <com.chibde.visualizer.LineBarVisualizer
+                android:id="@+id/visualizer"
+
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/duaration"
+                android:layout_width="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="25dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="0:00"
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/dateFromNotification"
+                android:layout_width="match_parent"
+
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_light"
+                android:text="caasad"
+                android:textSize="10sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/incomingVOiceMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:background="@drawable/incomingbuuble"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="fitXY"
+                android:layout_marginBottom="10dp"
+                android:padding="15dp"
+                android:background="@drawable/transparent"
+                android:id="@+id/inComingplayvoicemesssage"
+                android:src="@drawable/play"
+                />
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"
+                android:padding="15dp"
+                android:id="@+id/loader_incoming"
+                app:SpinKit_Color="@color/colorPrimary"
+                style="@style/SpinKitView.Large.Circle"
+                android:layout_centerInParent="true"
+
+                />
+
+            <com.chibde.visualizer.LineBarVisualizer
+                android:id="@+id/visualizer1"
+                android:layout_width="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/inComingduaration"
+                android:layout_width="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="25dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="0:00"
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/inComingdateFromNotification"
+                android:layout_width="match_parent"
+
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_light"
+                android:text="caasad"
+                android:textSize="10sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

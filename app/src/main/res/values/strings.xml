@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Irveni</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+
+
+    <string name="agora_app_id">f74a78e10f3c4aada8605fbbb6e4ab2b</string>
+    <string name="agora_access_token">#YOUR ACCESS TOKEN#</string>
+
+</resources>

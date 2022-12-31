@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1089663679561",
+    "project_id": "doorbell-ddcc3",
+    "storage_bucket": "doorbell-ddcc3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089663679561:android:acf50cd0f04c9d18a55398",
+        "android_client_info": {
+          "package_name": "com.irveni.doorbell"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1089663679561-hd6qbe0mfond53jq36snj3vsrqrpfl92.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.irveni.doorbell",
+            "certificate_hash": "68075a548471e15c41a2b992598381c90e9707eb"
+          }
+        },
+        {
+          "client_id": "1089663679561-bdhu2otujhqpnjl5c9tbrhi60drqt5fk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg5WnhgZKdGYPXbfabHZur78H655931Yc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1089663679561-bdhu2otujhqpnjl5c9tbrhi60drqt5fk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
